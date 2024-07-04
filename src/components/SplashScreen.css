@@ -1,0 +1,59 @@
+/* src/components/SplashScreen.css */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #bcc6cc,
+    #eee,
+    #bcc6cc
+  ); /* Or any background color you prefer */
+  z-index: 9999; /* Ensure it's on top */
+}
+
+.splash-logo {
+  width: 150px; /* Adjust as necessary */
+  height: auto;
+}
+
+.loading-animation {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.splash-screen::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 300%;
+  position: absolute;
+  z-index: 1000;
+  transform: translateX(100%) rotate(30deg);
+  animation: shine 3s infinite ease-in;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(128, 186, 232, 0) 99%,
+    rgba(128, 186, 232, 0) 100%
+  );
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(30deg);
+  }
+  80% {
+    transform: translateX(-100%) translateY(-100%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(30deg);
+  }
+}

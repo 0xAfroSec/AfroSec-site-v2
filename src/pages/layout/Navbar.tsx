@@ -10,7 +10,7 @@ const Navbar = () => {
       <header className="sticky top-0 flex h-16 items-center gap-4  bg-background px-16 md:px-16">
         <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <div className="flex items-center gap-2 text-black font-bold">
-            <img src={logo} alt="Logo" className="h-14" />
+            <img src={logo} alt="Logo" className="h-12 rounded-full" />
             <p>0xAfroSec</p>
           </div>
         </nav>
@@ -54,22 +54,22 @@ const Navbar = () => {
           className="flex font-medium items-center gap-4 md:ml-auto md:gap-2 lg:gap-4 ml-auto flex-1 sm:flex-initial"
         >
           <NavLink
-            to="/work"
-            className="text-foreground transition-colors hover:text-foreground"
+            to="/"
+            className="text-foreground transition-colors text-sky-500 hover:text-foreground"
           >
-            Work
+            &lt;Home &#47;&gt;
           </NavLink>
           <NavLink
-            to="/"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            to="/services"
+            className="text-muted-foreground transition-colors text-green-500 hover:text-foreground"
           >
-            About
+            &lt;Services &#47;&gt;
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-muted-foreground transition-colors hover:text-foreground"
+            className="text-muted-foreground transition-colors text-red-600 hover:text-foreground"
           >
-            Contact
+            &lt;Contact &#47;&gt;
           </NavLink>
         </nav>
       </header>
