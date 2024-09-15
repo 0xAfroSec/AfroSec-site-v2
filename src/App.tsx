@@ -5,6 +5,7 @@ import SplashScreen from "./components/SplashScreen";
 import Home from "./pages/home/Home";
 import Layout from "./pages/layout/Layout";
 import Contact from "./pages/Contact/Contact";
+import Services from "./pages/services/Services";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -13,7 +14,7 @@ const App = () => {
     // Simulate a loading process (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 5000); // Adjust the time as necessary
+    }, 4500); // Adjust the time as necessary
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,6 +30,7 @@ const App = () => {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/services" element={<Services />} />
             {/* Add other routes here */}
           </Route>
         </Routes>

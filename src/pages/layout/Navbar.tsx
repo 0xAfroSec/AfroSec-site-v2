@@ -31,8 +31,8 @@ const Navbar = () => {
                 <img src="" alt="Logo" className="h-6 w-6" />
                 <span>0xAfroSec</span>
               </div>
-              <NavLink to="/work" className="hover:text-foreground">
-                Work
+              <NavLink to="/services" className="hover:text-foreground">
+                Services
               </NavLink>
               <NavLink
                 to="/about"
@@ -55,19 +55,19 @@ const Navbar = () => {
         >
           <NavLink
             to="/"
-            className="text-foreground transition-colors text-sky-500 hover:text-foreground"
+            className="text-foreground transition-colors hover:text-foreground"
           >
             &lt;Home &#47;&gt;
           </NavLink>
           <NavLink
             to="/services"
-            className="text-muted-foreground transition-colors text-green-500 hover:text-foreground"
+            className="text-muted-foreground transition-colors hover:text-foreground"
           >
             &lt;Services &#47;&gt;
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-muted-foreground transition-colors text-red-600 hover:text-foreground"
+            className="text-muted-foreground transition-colors hover:text-foreground"
           >
             &lt;Contact &#47;&gt;
           </NavLink>
