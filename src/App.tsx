@@ -1,5 +1,4 @@
-// src/App.tsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SplashScreen from "./components/SplashScreen";
 import Home from "./pages/home/Home";
@@ -11,10 +10,9 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading process (e.g., fetching data)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4500); // Adjust the time as necessary
+    }, 4500);
 
     return () => clearTimeout(timer);
   }, []);
